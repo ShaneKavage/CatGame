@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -44,6 +45,7 @@ public class SC_SCE_GridManager : MonoBehaviour
     void Start()
     {
         _Player = GameObject.FindGameObjectWithTag("Player");
+
         _MaxPositionX = _GridWidth * _SubGridSize * _SingleCellSize;
         _MaxPositionZ = _GridHeight * _SubGridSize * _SingleCellSize;
 
@@ -54,7 +56,7 @@ public class SC_SCE_GridManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         CalculateCurrentLocation();
     }
@@ -73,40 +75,28 @@ public class SC_SCE_GridManager : MonoBehaviour
     {
         if (_Player.transform.position.x > _MaxPositionX)
         {
-            Vector3 newPosition = new Vector3(0,
-                                              _Player.transform.position.y,
-                                              _Player.transform.position.z);
-
-            _Player.transform.SetPositionAndRotation(newPosition,
-                                                    _Player.transform.rotation);
+            _Player.transform.position = new Vector3(0,
+                                                     _Player.transform.position.y,
+                                                     _Player.transform.position.z);
         }
         if (_Player.transform.position.x < 0)
         {
-            Vector3 newPosition = new Vector3(_MaxPositionX, 
-                                              _Player.transform.position.y, 
-                                              _Player.transform.position.z);
-
-            _Player.transform.SetPositionAndRotation(newPosition, 
-                                                    _Player.transform.rotation);
+            _Player.transform.position = new Vector3(_MaxPositionX,
+                                                     _Player.transform.position.y,
+                                                     _Player.transform.position.z);
         }
 
         if (_Player.transform.position.z > _MaxPositionZ)
         {
-            Vector3 newPosition = new Vector3(_Player.transform.position.x,
-                                              _Player.transform.position.y,
-                                              0);
-
-            _Player.transform.SetPositionAndRotation(newPosition,
-                                                    _Player.transform.rotation);
+            _Player.transform.position = new Vector3(_Player.transform.position.x,
+                                                     _Player.transform.position.y,
+                                                     0);
         }
         if (_Player.transform.position.z < 0)
         {
-            Vector3 newPosition = new Vector3(_Player.transform.position.x, 
-                                              _Player.transform.position.y, 
-                                              _MaxPositionZ);
-
-            _Player.transform.SetPositionAndRotation(newPosition,
-                                                    _Player.transform.rotation);
+            _Player.transform.position = new Vector3(_Player.transform.position.x,
+                                                     _Player.transform.position.y,
+                                                     _MaxPositionZ);
         }
     }
     private void SetPlayerStartPosition()

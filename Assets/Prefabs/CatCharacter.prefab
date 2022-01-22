@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2901298100261649114}
   - component: {fileID: 2901298100261649116}
   - component: {fileID: 2901298100261649119}
+  - component: {fileID: 7102647410451962666}
   m_Layer: 0
   m_Name: CatCharacter
   m_TagString: Player
@@ -128,6 +129,28 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   cam: {fileID: 0}
+--- !u!114 &7102647410451962666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2901298100261649118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1536cb03832507947895c45edde243f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _MaxPositionX: 0
+  _MaxPositionZ: 0
+  _StartingGridX: 1
+  _StartingGridZ: 2
+  _StartingSubGridX: 0
+  _StartingSubGridZ: 0
+  _CurrentGridX: 0
+  _CurrentGridZ: 0
+  _CurrentSubGridX: 0
+  _CurrentSubGridZ: 0
 --- !u!1 &2901298101457877065
 GameObject:
   m_ObjectHideFlags: 0

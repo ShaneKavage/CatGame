@@ -594,7 +594,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_CommonLens: 1
   m_Lens:
-    FieldOfView: 100
+    FieldOfView: 130
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
@@ -602,7 +602,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.8731343, y: 1}
+    m_SensorSize: {x: 1.2413793, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -669,7 +669,7 @@ MonoBehaviour:
     m_Radius: 4
   - m_Height: 1
     m_Radius: 6
-  - m_Height: 0
+  - m_Height: 1
     m_Radius: 4
   m_LegacyHeadingBias: 3.4028235e+38
   m_Rigs:
