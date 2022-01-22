@@ -52,7 +52,7 @@ public class SC_SCE_GridManager : MonoBehaviour
         _StartingSubGridX = Random.Range(0, _SubGridSize);
         _StartingSubGridZ = Random.Range(0, _SubGridSize);
 
-        SetPlayerStartPosition();
+        //SetPlayerStartPosition();
     }
 
     // Update is called once per frame
