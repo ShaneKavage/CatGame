@@ -13,7 +13,7 @@ public class ThirdPersonMovement : MonoBehaviour
 
     Vector3 velocity;
     public float turnSmoothVelocity;
-
+    [SerializeField]
     bool isGrounded = false;
 
     public Transform groundCheck;
@@ -25,6 +25,8 @@ public class ThirdPersonMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
         //Start Gravity
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
         if (isGrounded && velocity.y < 0)
