@@ -14,7 +14,6 @@ public class PickupItem : MonoBehaviour
 
     public void Start()
     {
-
         hud = GameObject.FindGameObjectWithTag("UI").GetComponent<HUD>();
     }
 
@@ -22,9 +21,7 @@ public class PickupItem : MonoBehaviour
     {
         //Check if player is within range
         Vector3 distanceToPlayer = player.position - transform.position;
-        if (distanceToPlayer.magnitude > pickupRange) { UIObject.SetActive(false); return; }
-        if (distanceToPlayer.magnitude <= pickupRange) { UIObject.SetActive(true); }
-            if (distanceToPlayer.magnitude <= pickupRange && Input.GetKeyDown(KeyCode.E)) { pickup(); }
+        if (distanceToPlayer.magnitude <= pickupRange && Input.GetKeyDown(KeyCode.E)) { pickup(); }
     }
 
     public void pickup()
@@ -32,15 +29,22 @@ public class PickupItem : MonoBehaviour
        hud.GainCollectible();
        UIObject.SetActive(false);
        print("Got Object; Object Destoryed");
-       GameObject.Destroy(gameObject);
+       Destroy(gameObject);
 
     }
 
-    void EnterPickupRange(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
             UIObject.SetActive(true);
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            UIObject.SetActive(false);
         }
     }
 }
