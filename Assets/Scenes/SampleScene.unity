@@ -692,7 +692,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.72075474, y: 1}
+    m_SensorSize: {x: 0.71268654, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -765,7 +765,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.72075474, y: 1}
+    m_SensorSize: {x: 0.71268654, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1033,6 +1033,24 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!114 &883253818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883253814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1536cb03832507947895c45edde243f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _MaxPositionX: 0
+  _MaxPositionZ: 0
+  _CurrentGridX: 0
+  _CurrentGridZ: 0
+  _CurrentSubGridX: 0
+  _CurrentSubGridZ: 0
 --- !u!1 &934364107
 GameObject:
   m_ObjectHideFlags: 3
@@ -1086,7 +1104,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.72075474, y: 1}
+    m_SensorSize: {x: 0.71268654, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1625,7 +1643,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.72075474, y: 1}
+    m_SensorSize: {x: 0.71268654, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1711,6 +1729,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6131388721307327199, guid: bcd18738eb1851545a996d60c6648f0a, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6131388721307327199, guid: bcd18738eb1851545a996d60c6648f0a, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7323178013558729298, guid: bcd18738eb1851545a996d60c6648f0a, type: 3}
