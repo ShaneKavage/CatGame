@@ -6,14 +6,14 @@ public class PickupItem : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public float pickupRange = 10;
+    public float pickupRange = 360;
     public Transform player;
 
-    public void update()
+    public void Update()
     {
         //Check if player is within range
         Vector3 distanceToPlayer = player.position - transform.position;
-        if (distanceToPlayer.magnitude <= pickupRange) { pickup(); }
+        if (distanceToPlayer.magnitude <= pickupRange && Input.GetKeyDown(KeyCode.E)) { pickup(); }
     }
 
     public void pickup()
