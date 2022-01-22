@@ -13,7 +13,7 @@ public class ThirdPersonMovement : MonoBehaviour
 
     Vector3 velocity;
     public float turnSmoothVelocity;
-
+    [SerializeField]
     bool isGrounded = false;
 
     public Transform groundCheck;
