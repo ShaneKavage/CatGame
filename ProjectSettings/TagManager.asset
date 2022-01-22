@@ -4,7 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - 3rdPersonCamera
+
+  - UI
+
   layers:
   - Default
   - TransparentFX
@@ -41,4 +43,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 2281920779
     locked: 0
