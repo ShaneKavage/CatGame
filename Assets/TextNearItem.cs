@@ -15,7 +15,7 @@ public class TextNearItem : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "player")
+        if(other.tag == "Player")
         {
             UIObject.SetActive(true);
         }
@@ -29,6 +29,6 @@ public class TextNearItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        UIObject.SetActive(false);
     }
 }
