@@ -10,6 +10,13 @@ public class PickupItem : MonoBehaviour
     public float pickupRange = 360;
     public Transform player;
     public GameObject UIObject;
+    public HUD hud;
+
+    public void Start()
+    {
+
+        hud = GameObject.FindGameObjectWithTag("UI").GetComponent<HUD>();
+    }
 
     public void Update()
     {
@@ -22,9 +29,10 @@ public class PickupItem : MonoBehaviour
 
     public void pickup()
     {
-        GameObject.Destroy(gameObject);
-        UIObject.SetActive(false);
-        print("Got Object; Object Destoryed");
+       hud.GainCollectible();
+       UIObject.SetActive(false);
+       print("Got Object; Object Destoryed");
+       GameObject.Destroy(gameObject);
 
     }
 
