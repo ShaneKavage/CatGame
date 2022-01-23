@@ -24,7 +24,6 @@ public class SC_ITM_RereadMessage : MonoBehaviour
         _TMP = GameObject.FindGameObjectWithTag("ItemTextCanvas").GetComponentInChildren<TextMeshProUGUI>();
         _HUD = GameObject.FindGameObjectWithTag("UI").GetComponent<HUD>();
         _Pan = GameObject.FindGameObjectWithTag("FadeInOutPanel");
-
     }
 
     public void Update()
