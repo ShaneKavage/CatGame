@@ -14,7 +14,6 @@ public class PickupItem : MonoBehaviour
 
     public void Start()
     {
-
         hud = GameObject.FindGameObjectWithTag("UI").GetComponent<HUD>();
     }
 
@@ -38,8 +37,8 @@ public class PickupItem : MonoBehaviour
     {
        hud.GainCollectible();
        UIObject.SetActive(false);
+       GetComponent<SC_ITM_SpawnScroll>().SpawnScroll();
        print("Got Object; Object Destoryed");
        Destroy(gameObject);
-
     }
 }

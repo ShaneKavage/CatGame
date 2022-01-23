@@ -6,6 +6,8 @@ TagManager:
   tags:
   - UI
   - 3rdPersonCamera
+  - Lantern
+  - FadeInOutPanel
   layers:
   - Default
   - TransparentFX
