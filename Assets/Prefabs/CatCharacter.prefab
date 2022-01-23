@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2901298100261649116}
   - component: {fileID: 2901298100261649119}
   - component: {fileID: 7102647410451962666}
-  - component: {fileID: 5358227622313661785}
+  - component: {fileID: 1935213174233684948}
   m_Layer: 0
   m_Name: CatCharacter
   m_TagString: Player
@@ -131,6 +131,11 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 8
+  walkingGrass: {fileID: 8300000, guid: 0024841bdd0ffe74b9084f4f01484259, type: 3}
+  walkingStone: {fileID: 8300000, guid: c4bf5127092fafd46aaf266686f72821, type: 3}
+  walkingSand: {fileID: 8300000, guid: 0df9931f16319fc4b879dd17919ac059, type: 3}
+  jump: {fileID: 8300000, guid: d3e586b8a21ae744a82e726559facbb9, type: 3}
+  audioSource: {fileID: 1935213174233684948}
   cam: {fileID: 0}
 --- !u!114 &7102647410451962666
 MonoBehaviour:
@@ -154,7 +159,7 @@ MonoBehaviour:
   _CurrentGridZ: 0
   _CurrentSubGridX: 0
   _CurrentSubGridZ: 0
---- !u!82 &5358227622313661785
+--- !u!82 &1935213174233684948
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,9 +169,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 78f5add07a0ffb2428b8aa5514a9a1ff, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.141
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0

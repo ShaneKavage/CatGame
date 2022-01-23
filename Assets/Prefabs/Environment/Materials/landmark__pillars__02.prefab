@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1252863721927673818}
   - component: {fileID: 5966549391479745980}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: landmark__pillars__02
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,11 +108,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0d89035c4c5fe4e4db73a013c10d1ce1, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 0d89035c4c5fe4e4db73a013c10d1ce1, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d89035c4c5fe4e4db73a013c10d1ce1, type: 3}

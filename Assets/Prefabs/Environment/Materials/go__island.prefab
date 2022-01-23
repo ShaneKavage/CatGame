@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7248849201579997323}
   - component: {fileID: 2773995703750300630}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: go__island
-  m_TagString: Untagged
+  m_TagString: Grass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,11 +108,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 769d7c81d48a90c40a183ad4cc8810ea, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 769d7c81d48a90c40a183ad4cc8810ea, type: 3}
+      propertyPath: m_TagString
+      value: Grass
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 769d7c81d48a90c40a183ad4cc8810ea, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 769d7c81d48a90c40a183ad4cc8810ea, type: 3}

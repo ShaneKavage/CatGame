@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6916998252798931049}
   - component: {fileID: 8586449273303976227}
   - component: {fileID: 5047559082640338359}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,9 +93,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6309025697270513969}
   - component: {fileID: 1153311219572703963}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: landmark--grave
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
