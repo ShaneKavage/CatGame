@@ -4,18 +4,22 @@
 TagManager:
   serializedVersion: 2
   tags:
-
   - UI
-
+  - 3rdPersonCamera
+  - Lantern
+  - FadeInOutPanel
+  - ItemTextCanvas
+  - Grass
+  - Stone
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - Ground
-  - 
+  - Stone
+  - Grass
   - 
   - 
   - 
@@ -43,7 +47,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: UI
-    uniqueID: 2281920779
     locked: 0

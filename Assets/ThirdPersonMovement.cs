@@ -21,12 +21,9 @@ public class ThirdPersonMovement : MonoBehaviour
     public LayerMask groundMask;
 
     public Transform cam;
-
     // Update is called once per frame
     void Update()
     {
-
-
         //Start Gravity
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
         if (isGrounded && velocity.y < 0)
@@ -36,6 +33,7 @@ public class ThirdPersonMovement : MonoBehaviour
         //Jump (if jump is broken make sure you have a ground layer and that the ground is set to that layer)
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
+            GetComponent<AudioSource>().Play();
             velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
         }
         
