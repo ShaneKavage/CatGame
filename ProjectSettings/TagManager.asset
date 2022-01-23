@@ -9,6 +9,8 @@ TagManager:
   - Lantern
   - FadeInOutPanel
   - ItemTextCanvas
+  - Grass
+  - Stone
   layers:
   - Default
   - TransparentFX

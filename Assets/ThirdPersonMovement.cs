@@ -19,6 +19,10 @@ public class ThirdPersonMovement : MonoBehaviour
     public Transform groundCheck;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
+    [SerializeField]
+    private List<AudioSource> _StoneSteps;
+    [SerializeField]
+    private List<AudioSource> _GrassSteps;
 
     public Transform cam;
 
@@ -55,6 +59,11 @@ public class ThirdPersonMovement : MonoBehaviour
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
+
+            if (Time.deltaTime % 1 == 0)
+            {
+                
+            }
         }
 
     }
