@@ -40,6 +40,7 @@ public class ThirdPersonMovement : MonoBehaviour
         //Jump (if jump is broken make sure you have a ground layer and that the ground is set to that layer)
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
+            _GrassSteps[Random.Range(0,1)].Play();
             velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
         }
         
