@@ -19,6 +19,7 @@ public class HUD : MonoBehaviour
     {
         colImage[collectionNum].GetComponent<Image>().sprite = hasCol;
         collectionNum++;
+        GetComponent<AudioSource>().Play();
     }
 
     public void ResetCollectables()
@@ -27,7 +28,6 @@ public class HUD : MonoBehaviour
         {
             colImage[i].GetComponent<Image>().sprite = notHasCol;
             collectionNum = 0;
-
         }
     
     }
