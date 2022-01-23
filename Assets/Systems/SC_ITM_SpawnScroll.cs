@@ -17,7 +17,11 @@ public class SC_ITM_SpawnScroll : MonoBehaviour
         messageInstant.transform.position = transform.position;
 
         messageInstant.GetComponent<SC_ITM_MessageContainer>().MessageText = _MessageText;
-
         messageInstant.GetComponent<SC_ITM_MessageContainer>().ShowMessage();
+    }
+
+    public void OnDestroy()
+    {
+        GetComponent<AudioSource>().Play();
     }
 }

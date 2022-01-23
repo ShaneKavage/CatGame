@@ -40,7 +40,6 @@ public class PickupItem : MonoBehaviour
        hud.GainCollectible();
        _TMP.color = new Color(_TMP.color.r, _TMP.color.g, _TMP.color.b, 0);
        GetComponent<SC_ITM_SpawnScroll>().SpawnScroll();
-       print("Got Object; Object Destoryed");
        Destroy(gameObject);
     }
 }

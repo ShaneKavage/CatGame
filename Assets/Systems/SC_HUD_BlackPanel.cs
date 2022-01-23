@@ -19,9 +19,7 @@ public class SC_HUD_BlackPanel : MonoBehaviour
     public void ShowMessage(string pMessage)
     {
        tmp.text = pMessage;
-       GameObject.FindGameObjectWithTag("ItemTextCanvas").GetComponentInChildren<TextMeshProUGUI>();
        StartCoroutine(FadeImage(false));
-        GetComponent<AudioSource>().Play();
     }
 
     public void HideMessage()

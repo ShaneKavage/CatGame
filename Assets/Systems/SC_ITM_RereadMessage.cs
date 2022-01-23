@@ -52,6 +52,7 @@ public class SC_ITM_RereadMessage : MonoBehaviour
 
     public void Reread()
     {
+        GetComponent<AudioSource>().Play();
         _TMP.color = new Color(_TMP.color.r, _TMP.color.g, _TMP.color.b, 0);
         GameObject pan = GameObject.FindGameObjectWithTag("FadeInOutPanel");
         pan.GetComponent<SC_HUD_BlackPanel>().ShowMessage(GetComponent< SC_ITM_MessageContainer >().MessageText);
