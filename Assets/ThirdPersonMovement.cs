@@ -26,6 +26,16 @@ public class ThirdPersonMovement : MonoBehaviour
 
     public Transform cam;
     // Update is called once per frame
+
+    private void Awake()
+    {
+        GameObject obj = GameObject.FindGameObjectWithTag("MainScreenMusic");
+        if (obj != null)
+        {
+            obj.GetComponent<SC_SCE_MusicManager>().DestroyME();
+        }
+
+    }
     void Update()
     {
         audioSource = GetComponent<AudioSource>();
