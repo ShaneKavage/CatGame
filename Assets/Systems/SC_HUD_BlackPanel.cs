@@ -32,10 +32,10 @@ public class SC_HUD_BlackPanel : MonoBehaviour
     {
         if (fadeAway)
         {
-            for (float i = 2; i >= 0; i -= Time.deltaTime)
+            for (float i = 2f; i >= 0; i -= Time.deltaTime)
             {
-                img.color = new Color(img.color.r, img.color.g, img.color.b, Mathf.Clamp(img.color.a - .1f, 0, .69f));
-                tmp.color = new Color(tmp.color.r, tmp.color.g, tmp.color.b, Mathf.Clamp(tmp.color.a - .1f, 0, 1));
+                img.color = new Color(img.color.r, img.color.g, img.color.b, Mathf.Clamp(img.color.a - .3f, 0, .69f));
+                tmp.color = new Color(tmp.color.r, tmp.color.g, tmp.color.b, Mathf.Clamp(tmp.color.a - .5f, 0, 1));
                 if (i < 0)
                 {
                     tmp.text = "";
@@ -45,10 +45,10 @@ public class SC_HUD_BlackPanel : MonoBehaviour
         }
         else
         {
-            for (float i = 0; i <= 2; i += Time.deltaTime)
+            for (float i = 0; i <= 2f; i += Time.deltaTime)
             {
-                img.color = new Color(img.color.r, img.color.g, img.color.b, Mathf.Clamp(img.color.a + .1f, 0, .69f));
-                tmp.color = new Color(tmp.color.r, tmp.color.g, tmp.color.b, Mathf.Clamp(tmp.color.a + .1f, 0, 1));
+                img.color = new Color(img.color.r, img.color.g, img.color.b, Mathf.Clamp(img.color.a + .3f, 0, .69f));
+                tmp.color = new Color(tmp.color.r, tmp.color.g, tmp.color.b, Mathf.Clamp(tmp.color.a + .5f, 0, 1));
                 yield return null;
             }
         }

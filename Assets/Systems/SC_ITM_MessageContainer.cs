@@ -27,6 +27,11 @@ public class SC_ITM_MessageContainer : MonoBehaviour
     {
         GameObject pan = GameObject.FindGameObjectWithTag("FadeInOutPanel");
         pan.GetComponent<SC_HUD_BlackPanel>().ShowMessage(_MessageText);
-        Debug.Log("Message text = " + _MessageText);
+   }
+
+    public void OnTriggerExit(Collider other)
+    {
+        GameObject pan = GameObject.FindGameObjectWithTag("FadeInOutPanel");
+        pan.GetComponent<SC_HUD_BlackPanel>().HideMessage();
     }
 }

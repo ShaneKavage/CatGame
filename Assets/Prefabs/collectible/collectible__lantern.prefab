@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5181c9530cf3a60489173c190b608071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickupRange: 3
+  pickupRange: 4
   player: {fileID: 0}
   UIObject: {fileID: 0}
   hud: {fileID: 0}
@@ -107,6 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Message: {fileID: 8799733346326380596, guid: 67fa8713621b63f419313a0ef885c55f, type: 3}
+  _MessageText: 
 --- !u!1001 &4697505900905891132
 PrefabInstance:
   m_ObjectHideFlags: 0

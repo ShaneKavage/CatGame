@@ -8,6 +8,7 @@ TagManager:
   - 3rdPersonCamera
   - Lantern
   - FadeInOutPanel
+  - ItemTextCanvas
   layers:
   - Default
   - TransparentFX

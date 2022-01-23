@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,12 +10,13 @@ public class PickupItem : MonoBehaviour
 
     public float pickupRange = 2.5f;
     public Transform player;
-    public GameObject UIObject;
+    private TextMeshProUGUI _TMP;
     public HUD hud;
 
     public void Start()
     {
         hud = GameObject.FindGameObjectWithTag("UI").GetComponent<HUD>();
+        _TMP = GameObject.FindGameObjectWithTag("ItemTextCanvas").GetComponentInChildren<TextMeshProUGUI>();
     }
 
     public void Update()
@@ -23,12 +25,12 @@ public class PickupItem : MonoBehaviour
         Vector3 distanceToPlayer = player.position - transform.position;
         if (distanceToPlayer.magnitude > pickupRange)
         {
-            UIObject.SetActive(false); 
+            _TMP.color = new Color(_TMP.color.r, _TMP.color.g, _TMP.color.b, 0);
             return; 
         }
         if (distanceToPlayer.magnitude <= pickupRange) 
-        { 
-            UIObject.SetActive(true); 
+        {
+            _TMP.color = new Color(_TMP.color.r, _TMP.color.g, _TMP.color.b, 1);
         }
         if (distanceToPlayer.magnitude <= pickupRange && Input.GetKeyDown(KeyCode.E)) { pickup(); }
     }
@@ -36,7 +38,7 @@ public class PickupItem : MonoBehaviour
     public void pickup()
     {
        hud.GainCollectible();
-       UIObject.SetActive(false);
+       _TMP.color = new Color(_TMP.color.r, _TMP.color.g, _TMP.color.b, 0);
        GetComponent<SC_ITM_SpawnScroll>().SpawnScroll();
        print("Got Object; Object Destoryed");
        Destroy(gameObject);

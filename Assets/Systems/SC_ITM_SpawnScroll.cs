@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class SC_ITM_SpawnScroll : MonoBehaviour
@@ -16,6 +17,7 @@ public class SC_ITM_SpawnScroll : MonoBehaviour
         messageInstant.transform.position = transform.position;
 
         messageInstant.GetComponent<SC_ITM_MessageContainer>().MessageText = _MessageText;
+
         messageInstant.GetComponent<SC_ITM_MessageContainer>().ShowMessage();
     }
 }
