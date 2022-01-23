@@ -11,6 +11,7 @@ TagManager:
   - ItemTextCanvas
   - Grass
   - Stone
+  - MainScreenMusic
   layers:
   - Default
   - TransparentFX
